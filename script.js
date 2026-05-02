@@ -8,6 +8,9 @@ const navLinks = [...document.querySelectorAll(".site-nav a")];
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const parallaxItems = [...document.querySelectorAll("[data-parallax]")];
+let ticking = false;
 
 function updateProgress() {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -15,9 +18,81 @@ function updateProgress() {
   progress.style.width = `${amount}%`;
 }
 
+function syncParallax() {
+  if (reduceMotion.matches) return;
+
+  const viewportHeight = window.innerHeight;
+  parallaxItems.forEach((item) => {
+    const speed = Number(item.dataset.parallax || 0);
+    const rect = item.getBoundingClientRect();
+    const centerOffset = rect.top + rect.height / 2 - viewportHeight / 2;
+    const y = centerOffset * speed * -1;
+    item.style.transform = `translate3d(0, ${y.toFixed(2)}px, 0)`;
+  });
+}
+
+function requestScrollSync() {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    updateProgress();
+    syncParallax();
+    ticking = false;
+  });
+}
+
 function closeMenu() {
   nav.classList.remove("is-open");
   toggle.setAttribute("aria-expanded", "false");
+}
+
+function initNavigation() {
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
+      });
+    },
+    { rootMargin: "-42% 0px -48% 0px", threshold: 0 },
+  );
+
+  sections.forEach((section) => sectionObserver.observe(section));
+}
+
+function initReveals() {
+  document.querySelectorAll(".reveal").forEach((element, index) => {
+    element.style.setProperty("--reveal-delay", `${Math.min(index * 35, 420)}ms`);
+  });
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 },
+  );
+
+  document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 }
 
 function setCommentStatus(message, tone = "neutral") {
@@ -123,48 +198,19 @@ async function submitComment(event) {
   }
 }
 
-toggle.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("is-open");
-  toggle.setAttribute("aria-expanded", String(isOpen));
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
-
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.16 },
-);
-
-document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
-
-const sectionObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      navLinks.forEach((link) => {
-        link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
-      });
-    });
-  },
-  { rootMargin: "-42% 0px -48% 0px", threshold: 0 },
-);
-
-sections.forEach((section) => sectionObserver.observe(section));
-
-window.addEventListener("scroll", updateProgress, { passive: true });
-window.addEventListener("resize", updateProgress);
-updateProgress();
-
-if (commentForm) {
+function initComments() {
+  if (!commentForm) return;
   commentForm.addEventListener("submit", submitComment);
   loadComments();
 }
+
+function initScroll() {
+  window.addEventListener("scroll", requestScrollSync, { passive: true });
+  window.addEventListener("resize", requestScrollSync);
+  requestScrollSync();
+}
+
+initNavigation();
+initReveals();
+initScroll();
+initComments();

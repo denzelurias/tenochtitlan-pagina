@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teotihuacan | Diseño web</title>
+    <title>Teotihuacan | Archivo lacustre</title>
     <meta
       name="description"
-      content="Página principal sobre Teotihuacan y la sociedad urbana: comercio, religión, arquitectura, poder y legado."
+      content="Experiencia editorial histórica sobre Teotihuacan y la sociedad urbana."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-mark" aria-hidden="true">folio</span>
         <span>Teotihuacan</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" aria-label="Navegación principal">
+      <nav class="site-nav" aria-label="Recorrido principal">
         <a href="#datos">Datos</a>
         <a href="#tiempo">Tiempo</a>
         <a href="#ciudad">Ciudad</a>
@@ -33,126 +34,147 @@
     </header>
 
     <main>
-      <section class="sheet hero-sheet" id="inicio">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Historia de México</p>
-          <h1>Teotihuacan</h1>
-          <p class="subtitle">y la sociedad urbana</p>
-          <p class="deck-note">
-            Una ciudad que convirtió comercio, religión, arquitectura y poder en uno de los centros
-            urbanos más importantes de Mesoamérica.
-          </p>
+      <section class="hero hero-editorial" id="inicio">
+        <div class="hero-backdrop" aria-hidden="true">
+          <div class="hero-layer hero-paper" data-parallax="0.04"></div>
+          <div class="hero-layer hero-map" data-parallax="0.08"></div>
+          <div class="hero-layer hero-city" data-parallax="0.16"></div>
         </div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="credits reveal">
-          <span>Periodo principal: siglos I-VII d.C.</span>
-          <span>Ubicación: Cuenca de México, actual Estado de México.</span>
-          <span>Patrimonio Mundial de la UNESCO.</span>
-        </div>
-        <div class="ornament ornament-bottom" aria-hidden="true"></div>
-      </section>
 
-      <section class="sheet content-sheet" id="datos">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Datos clave</h2>
-        </div>
-        <div class="fact-grid reveal">
-          <article>
-            <span>Periodo principal</span>
-            <p>Siglos I-VII d.C.</p>
-          </article>
-          <article>
-            <span>Ubicación</span>
-            <p>Cuenca de México, actual Estado de México.</p>
-          </article>
-          <article>
-            <span>Escala urbana</span>
-            <p>Más de 100,000 habitantes, con estimaciones cercanas a 200,000.</p>
-          </article>
-          <article>
-            <span>Importancia</span>
-            <p>Centro político, religioso, comercial, artesanal y cultural.</p>
-          </article>
-          <article class="wide-fact">
-            <span>Nombre</span>
-            <p>
-              “Teotihuacan” es un nombre náhuatl posterior que significa “lugar donde fueron hechos
-              los dioses” o “ciudad de los dioses”.
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="eyebrow reveal reveal-left">Historia de México · archivo urbano</p>
+            <h1 class="reveal reveal-ink">Teotihuacan</h1>
+            <p class="hero-kicker reveal reveal-up">y la sociedad urbana</p>
+            <p class="hero-lead reveal reveal-up">
+              Una ciudad que convirtió comercio, religión, arquitectura y poder en uno de los centros
+              urbanos más importantes de Mesoamérica.
             </p>
-          </article>
+          </div>
+
+          <aside class="hero-archive-panel reveal reveal-right">
+            <figure class="artifact-image">
+              <img src="assets/tenochtitlan-hero.png" alt="Ilustración editorial de una ciudad mesoamericana sobre el agua" />
+            </figure>
+            <div class="panel-rule" aria-hidden="true"></div>
+            <p class="panel-label">Claves del recorrido</p>
+            <div class="archive-mini-grid">
+              <article>
+                <span>Periodo</span>
+                <strong>Siglos I-VII d.C.</strong>
+              </article>
+              <article>
+                <span>Ubicación</span>
+                <strong>Cuenca de México</strong>
+              </article>
+              <article>
+                <span>Escala</span>
+                <strong>100,000+ habitantes</strong>
+              </article>
+            </div>
+          </aside>
         </div>
-        <div class="rule" aria-hidden="true"></div>
+
+        <a class="scroll-cue" href="#datos" aria-label="Continuar al contenido">Explorar archivo</a>
       </section>
 
-      <section class="sheet content-sheet" id="introduccion">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Introducción</h2>
+      <section class="archive-section" id="datos">
+        <div class="section-shell">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Fichas iniciales</p>
+            <h2>Datos clave</h2>
+          </div>
+          <div class="fact-grid">
+            <article class="fact-card reveal reveal-scale">
+              <span>Periodo principal</span>
+              <p>Siglos I-VII d.C.</p>
+            </article>
+            <article class="fact-card reveal reveal-scale">
+              <span>Ubicación</span>
+              <p>Cuenca de México, actual Estado de México.</p>
+            </article>
+            <article class="fact-card reveal reveal-scale">
+              <span>Escala urbana</span>
+              <p>Una de las ciudades más grandes del mundo antiguo, con más de 100,000 habitantes.</p>
+            </article>
+            <article class="fact-card reveal reveal-scale">
+              <span>Importancia</span>
+              <p>Centro político, religioso, comercial, artesanal y cultural.</p>
+            </article>
+            <article class="fact-card wide-card reveal reveal-scale">
+              <span>Nombre</span>
+              <p>
+                “Teotihuacan” es un nombre náhuatl posterior que significa “lugar donde fueron hechos
+                los dioses” o “ciudad de los dioses”.
+              </p>
+            </article>
+          </div>
         </div>
-        <div class="copy-columns reveal">
-          <p>
-            Teotihuacan fue una de las ciudades más influyentes del México antiguo. Su importancia
-            no se explica sólo por el tamaño de sus pirámides, sino por su capacidad para organizar
-            población, comercio, religión, arquitectura monumental, barrios especializados y redes de
-            intercambio que llegaron a regiones muy lejanas de Mesoamérica.
-          </p>
-          <p>
-            Aunque hoy se le conoce como Teotihuacan, ese nombre fue usado siglos después por los
-            mexicas. No sabemos con certeza cómo llamaban sus propios habitantes a la ciudad ni qué
-            lengua predominaba en ella.
-          </p>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
       </section>
 
-      <section class="sheet content-sheet" id="tiempo">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Línea del tiempo</h2>
-        </div>
-        <div class="timeline-table reveal" role="table" aria-label="Línea del tiempo de Teotihuacan">
-          <div role="row">
-            <strong role="cell">400-200 a.C.</strong>
-            <p role="cell">La región estaba formada por aldeas y comunidades agrícolas.</p>
+      <section class="document-section" id="introduccion">
+        <div class="section-shell editorial-grid">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Lámina 01</p>
+            <h2>Introducción</h2>
+            <p class="archive-note">La ciudad como sistema urbano, religioso y comercial.</p>
           </div>
-          <div role="row">
-            <strong role="cell">200 a.C.-200 d.C.</strong>
-            <p role="cell">La erupción del Xitle afectó a Cuicuilco y favoreció el crecimiento de Teotihuacan.</p>
-          </div>
-          <div role="row">
-            <strong role="cell">Siglos I-II d.C.</strong>
-            <p role="cell">La ciudad comenzó a construir grandes edificios y a consolidar su trazo urbano.</p>
-          </div>
-          <div role="row">
-            <strong role="cell">Siglos III-V d.C.</strong>
-            <p role="cell">Apogeo urbano, religioso, comercial y político de Teotihuacan.</p>
-          </div>
-          <div role="row">
-            <strong role="cell">Siglos VI-VII d.C.</strong>
-            <p role="cell">Crisis interna, incendios en edificios públicos y abandono progresivo.</p>
-          </div>
-          <div role="row">
-            <strong role="cell">Después del siglo VII</strong>
-            <p role="cell">Su influencia continuó en otras culturas y se convirtió en un lugar sagrado.</p>
+          <div class="reading-column reveal reveal-up">
+            <p>
+              Teotihuacan fue una de las ciudades más influyentes del México antiguo. Su importancia
+              no se explica sólo por el tamaño de sus pirámides, sino por su capacidad para organizar
+              población, comercio, religión, arquitectura monumental, barrios especializados y redes
+              de intercambio que llegaron a regiones muy lejanas de Mesoamérica.
+            </p>
+            <p>
+              Aunque hoy se le conoce como Teotihuacan, ese nombre fue usado siglos después por los
+              mexicas. No sabemos con certeza cómo llamaban sus propios habitantes a la ciudad ni qué
+              lengua predominaba en ella.
+            </p>
           </div>
         </div>
-        <div class="rule" aria-hidden="true"></div>
       </section>
 
-      <section class="sheet content-sheet" id="origenes">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Origen y crecimiento</h2>
+      <section class="timeline-section" id="tiempo">
+        <div class="section-shell editorial-grid">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Columna cronológica</p>
+            <h2>Línea del tiempo</h2>
+          </div>
+          <div class="timeline-list">
+            <article class="timeline-card reveal reveal-up">
+              <time>400-200 a.C.</time>
+              <p>La región estaba formada por aldeas y comunidades agrícolas.</p>
+            </article>
+            <article class="timeline-card reveal reveal-up">
+              <time>200 a.C.-200 d.C.</time>
+              <p>La erupción del Xitle afectó a Cuicuilco y favoreció el crecimiento de Teotihuacan.</p>
+            </article>
+            <article class="timeline-card reveal reveal-up">
+              <time>Siglos I-II d.C.</time>
+              <p>La ciudad comenzó a construir grandes edificios y a consolidar su trazo urbano.</p>
+            </article>
+            <article class="timeline-card reveal reveal-up">
+              <time>Siglos III-V d.C.</time>
+              <p>Apogeo urbano, religioso, comercial y político de Teotihuacan.</p>
+            </article>
+            <article class="timeline-card reveal reveal-up">
+              <time>Siglos VI-VII d.C.</time>
+              <p>Crisis interna, incendios en edificios públicos y abandono progresivo.</p>
+            </article>
+            <article class="timeline-card reveal reveal-up">
+              <time>Después del siglo VII</time>
+              <p>Su influencia continuó en otras culturas y se convirtió en un lugar sagrado.</p>
+            </article>
+          </div>
         </div>
-        <div class="split-layout reveal">
-          <div>
+      </section>
+
+      <section class="document-section split-document" id="origenes">
+        <div class="section-shell wide-grid">
+          <div class="reading-column reveal reveal-left">
+            <p class="eyebrow">Origen y crecimiento</p>
+            <h2>De aldeas a ciudad planeada</h2>
             <p>
               Teotihuacan creció en una región con recursos importantes: tierras agrícolas,
               manantiales y yacimientos de obsidiana cercanos. La obsidiana era fundamental para
@@ -169,21 +191,19 @@
               planeada, densa y cosmopolita.
             </p>
           </div>
-          <figure class="photo-frame">
-            <img src="assets/tenochtitlan-hero.png" alt="Ilustración estilizada de una ciudad mesoamericana" />
+          <figure class="artifact-card reveal reveal-right" data-parallax="0.05">
+            <img src="assets/tenochtitlan-hero.png" alt="Ilustración de ciudad antigua y paisaje lacustre" />
+            <figcaption>Reconstrucción visual tratada como fragmento de archivo.</figcaption>
           </figure>
         </div>
-        <div class="rule" aria-hidden="true"></div>
       </section>
 
-      <section class="sheet content-sheet" id="ciudad">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>La ciudad planeada</h2>
-        </div>
-        <div class="copy-columns reveal">
-          <div>
+      <section class="map-section" id="ciudad">
+        <div class="map-lines" aria-hidden="true" data-parallax="0.08"></div>
+        <div class="section-shell wide-grid">
+          <div class="reading-column reveal reveal-left">
+            <p class="eyebrow">Trazo urbano</p>
+            <h2>La ciudad planeada</h2>
             <p>
               Teotihuacan no creció de forma desordenada. Su trazo urbano estaba organizado
               alrededor de grandes ejes, plazas, pirámides, templos, palacios y conjuntos
@@ -194,282 +214,287 @@
               organizaron algunos de los edificios más importantes, como la Pirámide del Sol, la
               Pirámide de la Luna y distintos conjuntos ceremoniales.
             </p>
+            <p>
+              La arquitectura de Teotihuacan tenía una función práctica, política y religiosa. Los
+              edificios no sólo servían como espacios físicos: también comunicaban poder, orden y una
+              visión del universo.
+            </p>
           </div>
-          <p>
-            La arquitectura de Teotihuacan tenía una función práctica, política y religiosa. Los
-            edificios no sólo servían como espacios físicos: también comunicaban poder, orden y una
-            visión del universo.
-          </p>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="edificios">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Edificios principales</h2>
-        </div>
-        <div class="feature-grid reveal">
-          <article>
-            <h3>Pirámide del Sol</h3>
-            <p>El edificio más voluminoso de Teotihuacan y uno de los monumentos más representativos del sitio.</p>
-          </article>
-          <article>
-            <h3>Pirámide de la Luna</h3>
-            <p>Se ubica al norte de la Calzada de los Muertos y su plaza fue un espacio ceremonial importante.</p>
-          </article>
-          <article>
-            <h3>Calzada de los Muertos</h3>
-            <p>La avenida principal; conectaba zonas ceremoniales, plazas y edificios monumentales.</p>
-          </article>
-          <article>
-            <h3>Ciudadela y Serpiente Emplumada</h3>
-            <p>Gran conjunto ceremonial con relieves asociados a Quetzalcóatl, conchas y símbolos acuáticos.</p>
-          </article>
-          <article>
-            <h3>Palacio de Quetzalpapálotl</h3>
-            <p>Espacio relacionado con la élite, decorado con aves, mariposas, plumas y símbolos rituales.</p>
-          </article>
-        </div>
-        <p class="stamp reveal">BRUTAL!</p>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="comercio">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Comercio y economía</h2>
-        </div>
-        <div class="copy-columns reveal">
-          <p>
-            El comercio fue una de las bases del poder de Teotihuacan. La ciudad necesitaba abastecer
-            a una población enorme y obtener materiales que no existían en la región.
-          </p>
-          <p>
-            Teotihuacan mantuvo redes de intercambio con regiones como Oaxaca, Veracruz, Hidalgo,
-            Puebla-Tlaxcala, la zona maya y Guatemala. Estas conexiones movían productos, ideas,
-            estilos artísticos, símbolos religiosos y formas de prestigio.
-          </p>
-        </div>
-        <div class="goods-list reveal">
-          <article><strong>Obsidiana</strong><span>Herramientas, armas, objetos rituales y prestigio.</span></article>
-          <article><strong>Plumas exóticas</strong><span>Quetzal, guacamaya y otras aves tropicales.</span></article>
-          <article><strong>Productos del mar</strong><span>Conchas, caracoles, sal y espinas de mantarraya.</span></article>
-          <article><strong>Textiles y fibras</strong><span>Algodón y fibras de maguey.</span></article>
-          <article><strong>Alimentos valiosos</strong><span>Cacao, frutas, semillas y productos lejanos.</span></article>
-          <article><strong>Objetos de lujo</strong><span>Jade, piedras verdes, cerámica fina, pieles y tintes.</span></article>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="intercambio">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Mercaderes e intercambio cultural</h2>
-        </div>
-        <div class="content-block reveal">
-          <p>
-            Los grandes mercaderes y especialistas en intercambio ayudaron a conectar Teotihuacan
-            con otras regiones de Mesoamérica. Su papel no era sólo económico: también facilitaban
-            el contacto cultural.
-          </p>
-          <p>
-            Gracias a estas redes, el estilo teotihuacano apareció en lugares lejanos. En algunos
-            sitios se han encontrado objetos, símbolos o formas arquitectónicas relacionadas con
-            Teotihuacan, como el talud-tablero.
-          </p>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="sociedad">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Sociedad y poder</h2>
-        </div>
-        <div class="content-block reveal">
-          <p>
-            La sociedad teotihuacana estaba organizada de manera compleja. No se conoce con certeza
-            si tuvo un solo gobernante o una forma de gobierno colectivo, pero las investigaciones
-            sugieren que existieron élites con funciones políticas, religiosas, militares y
-            administrativas.
-          </p>
-        </div>
-        <div class="role-grid reveal">
-          <article>
-            <h3>Sacerdotes</h3>
-            <p>Organizaban ceremonias, calendarios, rituales agrícolas y conocimientos de astronomía, religión y pintura mural.</p>
-          </article>
-          <article>
-            <h3>Militares</h3>
-            <p>Su tamaño e influencia difícilmente se explican sin fuerza militar o capacidad de control político.</p>
-          </article>
-          <article>
-            <h3>Artesanos y trabajadores</h3>
-            <p>Constructores, agricultores, mineros, pintores, ceramistas y productores de objetos rituales y cotidianos.</p>
-          </article>
-          <article>
-            <h3>Barrios multiétnicos</h3>
-            <p>Algunos barrios parecen haber estado habitados por personas de Oaxaca o la costa del Golfo.</p>
-          </article>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="religion">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Religión y cosmovisión</h2>
-        </div>
-        <div class="content-block reveal">
-          <p>
-            La religión estaba presente en la arquitectura, los murales, los rituales, la
-            organización de los espacios y la vida política.
-          </p>
-          <p>
-            Los edificios estaban alineados y distribuidos de manera simbólica. La ciudad no sólo era
-            un lugar para vivir: también representaba una forma de entender el universo, los ciclos
-            agrícolas, el agua, las montañas y el poder sagrado.
-          </p>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="caida">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Crisis y caída</h2>
-        </div>
-        <div class="copy-columns reveal">
-          <p>
-            La caída de Teotihuacan no ocurrió de un día para otro. Fue un proceso de crisis y
-            abandono progresivo.
-          </p>
-          <p>
-            Los incendios en edificios públicos y zonas de poder sugieren conflictos internos o
-            ataques dirigidos contra las élites. No se sabe con certeza si hubo una invasión externa,
-            una revuelta interna o una combinación de varios factores.
-          </p>
-        </div>
-        <ul class="cause-list reveal">
-          <li>Concentración del poder en las élites.</li>
-          <li>Descontento social.</li>
-          <li>Incendios y destrucción de edificios públicos.</li>
-          <li>Problemas ambientales y deforestación.</li>
-          <li>Dificultades para abastecer una ciudad enorme.</li>
-          <li>Interrupción o competencia en rutas comerciales.</li>
-          <li>Abandono gradual de la población.</li>
-        </ul>
-        <p class="closing-line reveal">
-          Teotihuacan dejó de funcionar como gran centro político y urbano, pero no desapareció de la
-          memoria mesoamericana.
-        </p>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet" id="legado">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Legado</h2>
-        </div>
-        <div class="content-block reveal">
-          <p>
-            Después de su caída, la influencia de Teotihuacan continuó en otras culturas. Sus estilos
-            arquitectónicos, símbolos, rutas comerciales y formas de prestigio se mezclaron con nuevas
-            tradiciones.
-          </p>
-          <p>
-            Siglos después, los mexicas consideraron Teotihuacan como un lugar sagrado donde habían
-            nacido los dioses. Por eso la ciudad se convirtió en un símbolo mítico e histórico.
-          </p>
-          <p>
-            Hoy Teotihuacan es Patrimonio Mundial de la UNESCO y uno de los sitios arqueológicos más
-            importantes de México.
-          </p>
-        </div>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="style-section" id="conclusion">
-        <div class="section-card reveal">
-          <p class="eyebrow">Conclusión</p>
-          <h2>Teotihuacan no fue sólo una ciudad con pirámides.</h2>
-          <p>
-            Fue un sistema urbano complejo que combinó comercio, religión, arquitectura, política,
-            artesanía y diversidad cultural. Su historia muestra cómo una ciudad puede convertirse en
-            centro de poder gracias a sus recursos, su organización y sus redes de intercambio.
-          </p>
-          <p>
-            También muestra que incluso las ciudades más grandes pueden caer cuando se combinan
-            tensiones internas, problemas ambientales y crisis económicas. Su legado permanece en sus
-            monumentos, en su influencia cultural y en la memoria esencial de la historia de México.
-          </p>
-        </div>
-      </section>
-
-      <section class="sheet content-sheet" id="fuentes">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Fuentes principales</h2>
-        </div>
-        <ul class="sources-list reveal">
-          <li>INAH: Zona Arqueológica de Teotihuacan.</li>
-          <li>UNESCO: Pre-Hispanic City of Teotihuacan.</li>
-          <li>Arqueología Mexicana: Teotihuacan y su organización sociopolítica.</li>
-          <li>Museo Nacional de Antropología, INAH: La obsidiana en Teotihuacan.</li>
-          <li>Arqueología Mexicana: La caída de Teotihuacan.</li>
-          <li>INAH: Palacio de Quetzalpapálotl.</li>
-          <li>INAH: Templo de la Serpiente Emplumada.</li>
-        </ul>
-        <div class="rule" aria-hidden="true"></div>
-      </section>
-
-      <section class="sheet content-sheet comments-sheet" id="comentarios">
-        <div class="ornament ornament-top" aria-hidden="true"></div>
-        <div class="rule" aria-hidden="true"></div>
-        <div class="section-title reveal">
-          <h2>Comentarios</h2>
-          <p>Voces del recorrido</p>
-        </div>
-        <div class="comments-layout reveal">
-          <form class="comment-form" id="comment-form">
-            <label>
-              <span>Nombre</span>
-              <input id="comment-name" name="authorName" type="text" maxlength="60" autocomplete="name" required />
-            </label>
-            <label class="comment-honeypot" aria-hidden="true">
-              <span>Sitio web</span>
-              <input name="website" type="text" tabindex="-1" autocomplete="off" />
-            </label>
-            <label>
-              <span>Comentario</span>
-              <textarea id="comment-body" name="body" rows="5" maxlength="500" required></textarea>
-            </label>
-            <div class="comment-form-footer">
-              <p id="comment-status" role="status" aria-live="polite"></p>
-              <button class="button primary" type="submit">Enviar comentario</button>
+          <div class="map-panel reveal reveal-right">
+            <span class="archive-stamp">archivo lacustre</span>
+            <div class="map-card">
+              <span>eje principal</span>
+              <strong>Calzada de los Muertos</strong>
             </div>
-          </form>
-          <div class="comments-panel">
-            <div class="comments-list" id="comments-list" aria-live="polite">
-              <p class="comments-empty">Cargando comentarios...</p>
+            <div class="map-card">
+              <span>centro ceremonial</span>
+              <strong>Pirámide del Sol</strong>
+            </div>
+            <div class="map-card">
+              <span>plaza ritual</span>
+              <strong>Pirámide de la Luna</strong>
             </div>
           </div>
         </div>
-        <div class="rule" aria-hidden="true"></div>
+      </section>
+
+      <section class="archive-section" id="edificios">
+        <div class="section-shell">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Fragmentos monumentales</p>
+            <h2>Edificios principales</h2>
+          </div>
+          <div class="artifact-grid">
+            <article class="source-card large-artifact reveal reveal-scale">
+              <h3>Pirámide del Sol</h3>
+              <p>Es el edificio más voluminoso de Teotihuacan y uno de los monumentos más representativos del sitio.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Pirámide de la Luna</h3>
+              <p>Su plaza funcionó como un espacio ceremonial importante.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Calzada de los Muertos</h3>
+              <p>Conectaba zonas ceremoniales, plazas y edificios monumentales.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Ciudadela y Templo de la Serpiente Emplumada</h3>
+              <p>Conjunto ceremonial decorado con relieves, conchas y símbolos acuáticos.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Palacio de Quetzalpapálotl</h3>
+              <p>Espacio relacionado con la élite y símbolos rituales.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section commerce-section" id="comercio">
+        <div class="map-lines" aria-hidden="true" data-parallax="0.07"></div>
+        <div class="section-shell">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Rutas y objetos</p>
+            <h2>Comercio y economía</h2>
+          </div>
+          <div class="commerce-intro reveal reveal-up">
+            <p>
+              El comercio fue una de las bases del poder de Teotihuacan. La ciudad necesitaba abastecer
+              a una población enorme y obtener materiales que no existían en la región.
+            </p>
+            <p>
+              Teotihuacan mantuvo redes de intercambio con regiones como Oaxaca, Veracruz, Hidalgo,
+              Puebla-Tlaxcala, la zona maya y Guatemala. Estas conexiones también transmitían ideas,
+              estilos artísticos, símbolos religiosos y formas de prestigio.
+            </p>
+          </div>
+          <div class="goods-list">
+            <article class="reveal reveal-scale"><strong>Obsidiana</strong><span>Herramientas, armas y objetos rituales.</span></article>
+            <article class="reveal reveal-scale"><strong>Plumas exóticas</strong><span>Quetzal, guacamaya y aves tropicales.</span></article>
+            <article class="reveal reveal-scale"><strong>Productos del mar</strong><span>Conchas, caracoles, sal y espinas de mantarraya.</span></article>
+            <article class="reveal reveal-scale"><strong>Textiles y fibras</strong><span>Algodón y fibras de maguey.</span></article>
+            <article class="reveal reveal-scale"><strong>Alimentos valiosos</strong><span>Cacao, frutas, semillas y productos lejanos.</span></article>
+            <article class="reveal reveal-scale"><strong>Objetos de lujo</strong><span>Jade, piedras verdes, cerámica fina, pieles y tintes.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="document-section" id="intercambio">
+        <div class="section-shell editorial-grid">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Intercambio cultural</p>
+            <h2>Mercaderes y redes</h2>
+          </div>
+          <div class="reading-column reveal reveal-up">
+            <p>
+              Los grandes mercaderes y especialistas en intercambio ayudaron a conectar Teotihuacan
+              con otras regiones de Mesoamérica. Su papel no era sólo económico: también facilitaban
+              el contacto cultural.
+            </p>
+            <p>
+              Gracias a estas redes, el estilo teotihuacano apareció en lugares lejanos. En algunos
+              sitios se han encontrado objetos, símbolos o formas arquitectónicas relacionadas con
+              Teotihuacan, como el talud-tablero.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="archive-section" id="sociedad">
+        <div class="section-shell">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Organización social</p>
+            <h2>Sociedad y poder</h2>
+            <p class="wide-reading">
+              La sociedad teotihuacana estaba organizada de manera compleja. No se conoce con certeza
+              si tuvo un solo gobernante o una forma de gobierno colectivo, pero existieron élites con
+              funciones políticas, religiosas, militares y administrativas.
+            </p>
+          </div>
+          <div class="role-grid">
+            <article class="source-card reveal reveal-scale">
+              <h3>Sacerdotes</h3>
+              <p>Organizaban ceremonias, calendarios, rituales agrícolas y conocimientos de astronomía, religión y pintura mural.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Militares</h3>
+              <p>Su tamaño e influencia difícilmente se explican sin algún tipo de fuerza militar o control político.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Artesanos y trabajadores</h3>
+              <p>Constructores, agricultores, mineros, pintores, ceramistas y especialistas en objetos rituales y cotidianos.</p>
+            </article>
+            <article class="source-card reveal reveal-scale">
+              <h3>Barrios multiétnicos</h3>
+              <p>Algunos barrios parecen haber estado habitados por personas de Oaxaca o la costa del Golfo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="document-section split-document" id="religion">
+        <div class="section-shell editorial-grid">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Cosmovisión</p>
+            <h2>Religión y espacio</h2>
+          </div>
+          <div class="reading-column reveal reveal-up">
+            <p>
+              La religión estaba presente en la arquitectura, los murales, los rituales, la
+              organización de los espacios y la vida política.
+            </p>
+            <p>
+              Los edificios estaban alineados y distribuidos de manera simbólica. La ciudad no sólo era
+              un lugar para vivir: también representaba una forma de entender el universo, los ciclos
+              agrícolas, el agua, las montañas y el poder sagrado.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dramatic-section" id="caida">
+        <div class="section-shell wide-grid">
+          <div class="dramatic-copy reveal reveal-left">
+            <p class="eyebrow">Crisis y caída</p>
+            <h2>Una ciudad enorme también puede fracturarse.</h2>
+            <p>
+              La caída de Teotihuacan no ocurrió de un día para otro. Fue un proceso de crisis y
+              abandono progresivo. Los incendios en edificios públicos y zonas de poder sugieren
+              conflictos internos o ataques dirigidos contra las élites.
+            </p>
+          </div>
+          <ul class="cause-list reveal reveal-right">
+            <li>Concentración del poder en las élites.</li>
+            <li>Descontento social.</li>
+            <li>Incendios y destrucción de edificios públicos.</li>
+            <li>Problemas ambientales y deforestación.</li>
+            <li>Dificultades para mantener el abastecimiento.</li>
+            <li>Competencia en rutas comerciales.</li>
+            <li>Abandono gradual de la población.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="dramatic-section legacy-section" id="legado">
+        <div class="section-shell wide-grid">
+          <div class="dramatic-copy reveal reveal-left">
+            <p class="eyebrow">Legado</p>
+            <h2>La memoria siguió habitando la ciudad.</h2>
+          </div>
+          <div class="legacy-copy reveal reveal-up">
+            <p>
+              Después de su caída, la influencia de Teotihuacan continuó en otras culturas. Sus estilos
+              arquitectónicos, símbolos, rutas comerciales y formas de prestigio se mezclaron con nuevas
+              tradiciones.
+            </p>
+            <p>
+              Siglos después, los mexicas consideraron Teotihuacan como un lugar sagrado donde habían
+              nacido los dioses. Hoy es Patrimonio Mundial de la UNESCO y uno de los sitios
+              arqueológicos más importantes de México.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="document-section conclusion-section" id="conclusion">
+        <div class="section-shell editorial-grid">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Conclusión</p>
+            <h2>No fue sólo una ciudad con pirámides.</h2>
+          </div>
+          <div class="reading-column reveal reveal-up">
+            <p>
+              Fue un sistema urbano complejo que combinó comercio, religión, arquitectura, política,
+              artesanía y diversidad cultural.
+            </p>
+            <p>
+              Su historia muestra cómo una ciudad puede convertirse en centro de poder gracias a sus
+              recursos, su organización y sus redes de intercambio. También muestra que incluso las
+              ciudades más grandes pueden caer cuando se combinan tensiones internas, problemas
+              ambientales y crisis económicas.
+            </p>
+            <p>
+              Teotihuacan dejó un legado duradero: sus monumentos siguen en pie, su influencia marcó a
+              otras culturas y su memoria continúa formando parte esencial de la historia de México.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="archive-section sources-section" id="fuentes">
+        <div class="section-shell">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Registro final</p>
+            <h2>Fuentes principales</h2>
+          </div>
+          <ul class="sources-list">
+            <li class="source-card reveal reveal-scale">INAH: Zona Arqueológica de Teotihuacan.</li>
+            <li class="source-card reveal reveal-scale">UNESCO: Pre-Hispanic City of Teotihuacan.</li>
+            <li class="source-card reveal reveal-scale">Arqueología Mexicana: Teotihuacan y su organización sociopolítica.</li>
+            <li class="source-card reveal reveal-scale">Museo Nacional de Antropología, INAH: La obsidiana en Teotihuacan.</li>
+            <li class="source-card reveal reveal-scale">Arqueología Mexicana: La caída de Teotihuacan.</li>
+            <li class="source-card reveal reveal-scale">INAH: Palacio de Quetzalpapálotl.</li>
+            <li class="source-card reveal reveal-scale">INAH: Templo de la Serpiente Emplumada.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="archive-section comments-section" id="comentarios">
+        <div class="section-shell wide-grid">
+          <div class="section-heading reveal reveal-left">
+            <p class="eyebrow">Libro de visitas</p>
+            <h2>Comentarios</h2>
+          </div>
+          <div class="comments-layout reveal reveal-up">
+            <form class="comment-form" id="comment-form">
+              <label>
+                <span>Nombre</span>
+                <input id="comment-name" name="authorName" type="text" maxlength="60" autocomplete="name" required />
+              </label>
+              <label class="comment-honeypot" aria-hidden="true">
+                <span>Sitio web</span>
+                <input name="website" type="text" tabindex="-1" autocomplete="off" />
+              </label>
+              <label>
+                <span>Comentario</span>
+                <textarea id="comment-body" name="body" rows="5" maxlength="500" required></textarea>
+              </label>
+              <div class="comment-form-footer">
+                <p id="comment-status" role="status" aria-live="polite"></p>
+                <button class="button primary" type="submit">Enviar comentario</button>
+              </div>
+            </form>
+            <div class="comments-panel">
+              <div class="comments-list" id="comments-list" aria-live="polite">
+                <p class="comments-empty">Cargando comentarios...</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Base web inspirada en “Copia de Presentación Teotihuacan”.</p>
+      <p>Archivo lacustre · Teotihuacan y la sociedad urbana</p>
       <a href="#inicio">Volver arriba</a>
     </footer>
 
