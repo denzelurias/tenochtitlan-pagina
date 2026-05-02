@@ -72,6 +72,12 @@ function renderComments(comments) {
 async function loadComments() {
   if (!commentsList) return;
 
+  if (window.location.protocol === "file:") {
+    commentsList.innerHTML =
+      '<p class="comments-empty">Los comentarios se cargan cuando la pagina se abre desde el servidor.</p>';
+    return;
+  }
+
   try {
     const response = await fetch("/api/comments");
     const payload = await response.json();
@@ -86,6 +92,11 @@ async function loadComments() {
 
 async function submitComment(event) {
   event.preventDefault();
+
+  if (window.location.protocol === "file:") {
+    setCommentStatus("Los comentarios se envian cuando la pagina se abre desde el servidor.", "error");
+    return;
+  }
 
   const submitButton = commentForm.querySelector('button[type="submit"]');
   const formData = new FormData(commentForm);

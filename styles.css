@@ -126,10 +126,10 @@ a {
 }
 
 .site-nav a {
-  padding: 10px 13px;
+  padding: 10px 10px;
   border-radius: 8px;
   color: rgba(242, 221, 186, 0.8);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   transition:
     color 180ms ease,
     transform 180ms ease,
@@ -217,6 +217,11 @@ section {
   inset: 20px;
 }
 
+.sheet > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-sheet {
   display: flex;
   min-height: calc(100vh - 142px);
@@ -300,6 +305,15 @@ section {
 .copy-columns,
 .split-layout,
 .building-grid,
+.feature-grid,
+.fact-grid,
+.timeline-table,
+.content-block,
+.goods-list,
+.role-grid,
+.cause-list,
+.sources-list,
+.closing-line,
 .credits,
 .stamp,
 .section-card {
@@ -387,6 +401,15 @@ section {
 .copy-columns p,
 .copy-columns li,
 .split-layout p,
+.content-block p,
+.feature-grid p,
+.fact-grid p,
+.timeline-table p,
+.goods-list span,
+.role-grid p,
+.cause-list li,
+.sources-list li,
+.closing-line,
 .section-card p,
 .comment-item p,
 .comments-empty,
@@ -401,6 +424,76 @@ section {
   gap: 12px;
   margin: 0;
   padding-left: 20px;
+}
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.fact-grid article,
+.feature-grid article,
+.role-grid article,
+.goods-list article {
+  border: 1px solid rgba(43, 29, 18, 0.22);
+  background: rgba(255, 244, 221, 0.28);
+  box-shadow: 0 16px 38px rgba(49, 33, 22, 0.14);
+}
+
+.fact-grid article {
+  min-height: 148px;
+  padding: 18px;
+}
+
+.fact-grid span,
+.goods-list strong {
+  display: block;
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.fact-grid p {
+  margin: 12px 0 0;
+}
+
+.wide-fact {
+  grid-column: span 2;
+}
+
+.timeline-table {
+  display: grid;
+  border-top: 1px solid rgba(43, 29, 18, 0.45);
+}
+
+.timeline-table div {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.34fr) 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(43, 29, 18, 0.28);
+}
+
+.timeline-table strong {
+  color: var(--ink);
+  font-family: "RyeLocal", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.timeline-table p,
+.content-block p {
+  margin: 0;
+}
+
+.content-block {
+  display: grid;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .split-layout {
@@ -464,6 +557,90 @@ section {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.86rem;
   font-weight: 760;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.feature-grid article,
+.role-grid article {
+  padding: 20px;
+}
+
+.feature-grid article:first-child {
+  grid-row: span 2;
+  background:
+    linear-gradient(rgba(255, 244, 221, 0.2), rgba(43, 29, 18, 0.16)),
+    url("assets/tenochtitlan-hero.png") center / cover;
+  color: var(--cream);
+  min-height: 280px;
+  display: grid;
+  align-content: end;
+  filter: sepia(0.42) saturate(0.76);
+}
+
+.feature-grid article:first-child h3,
+.feature-grid article:first-child p {
+  color: var(--cream);
+  text-shadow: 0 2px 14px rgba(22, 13, 8, 0.55);
+}
+
+.feature-grid h3,
+.role-grid h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-family: "RyeLocal", Georgia, serif;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.feature-grid p,
+.role-grid p {
+  margin: 0;
+}
+
+.goods-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.goods-list article {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.goods-list span {
+  display: block;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.cause-list,
+.sources-list {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding-left: 22px;
+}
+
+.cause-list {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.closing-line {
+  margin: 26px 0 0;
 }
 
 .stamp {
@@ -757,8 +934,24 @@ section {
   .copy-columns,
   .split-layout,
   .building-grid,
+  .feature-grid,
+  .fact-grid,
+  .goods-list,
+  .role-grid,
+  .cause-list,
   .comments-layout {
     grid-template-columns: 1fr;
+  }
+
+  .wide-fact,
+  .feature-grid article:first-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .timeline-table div {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 
   .credits {
