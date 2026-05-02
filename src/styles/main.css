@@ -1,12 +1,12 @@
 @font-face {
   font-family: "RyeLocal";
-  src: url("assets/fonts/rye.ttf") format("truetype");
+  src: url("../../assets/fonts/rye.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "SpecialEliteLocal";
-  src: url("assets/fonts/special-elite.ttf") format("truetype");
+  src: url("../../assets/fonts/special-elite.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -55,7 +55,7 @@ body {
     radial-gradient(circle at 18% 12%, rgba(255, 248, 226, 0.52), transparent 28rem),
     radial-gradient(circle at 82% 20%, rgba(88, 116, 97, 0.14), transparent 30rem),
     linear-gradient(90deg, rgba(36, 24, 17, 0.12), transparent 13%, transparent 87%, rgba(36, 24, 17, 0.14)),
-    url("assets/paper-texture.png");
+    url("../../assets/paper-texture.png");
   background-size: auto, auto, auto, 1100px 1100px;
   overflow-x: hidden;
 }
@@ -81,7 +81,7 @@ body::before {
 body::after {
   z-index: -1;
   opacity: 0.08;
-  background: url("assets/textures/map-lines.svg") center top / 1200px auto repeat-y;
+  background: url("../../assets/textures/map-lines.svg") center top / 1200px auto repeat-y;
 }
 
 img {
@@ -235,12 +235,12 @@ section {
 .hero-paper {
   background:
     linear-gradient(90deg, rgba(231, 214, 183, 0.86), rgba(231, 214, 183, 0.4) 46%, rgba(38, 63, 59, 0.28)),
-    url("assets/paper-texture.png") center / 1100px 1100px;
+    url("../../assets/paper-texture.png") center / 1100px 1100px;
   opacity: 0.78;
 }
 
 .hero-map {
-  background: url("assets/textures/map-lines.svg") 76% 52% / 900px auto no-repeat;
+  background: url("../../assets/textures/map-lines.svg") 76% 52% / 900px auto no-repeat;
   opacity: 0.18;
 }
 
@@ -248,7 +248,7 @@ section {
   inset: 10% -10% -12% 36%;
   background:
     linear-gradient(90deg, rgba(231, 214, 183, 0.12), rgba(38, 63, 59, 0.2)),
-    url("assets/tenochtitlan-hero.png") center / cover no-repeat;
+    url("../../assets/tenochtitlan-hero.png") center / cover no-repeat;
   opacity: 0.46;
   filter: sepia(0.26) saturate(0.72) contrast(0.92);
   mask-image: linear-gradient(90deg, transparent, #000 18%, #000 86%, transparent);
@@ -321,7 +321,7 @@ section {
   border: 1px solid rgba(36, 24, 17, 0.24);
   background:
     linear-gradient(rgba(247, 238, 220, 0.58), rgba(216, 189, 141, 0.34)),
-    url("assets/paper-texture.png") center / 760px 760px;
+    url("../../assets/paper-texture.png") center / 760px 760px;
   box-shadow: var(--shadow-soft);
 }
 
@@ -581,7 +581,7 @@ section {
   color: var(--bone);
   background:
     linear-gradient(120deg, rgba(38, 63, 59, 0.96), rgba(21, 23, 25, 0.94)),
-    url("assets/paper-texture.png") center / 1000px 1000px;
+    url("../../assets/paper-texture.png") center / 1000px 1000px;
 }
 
 .map-section .eyebrow,
@@ -601,7 +601,7 @@ section {
   position: absolute;
   inset: -15%;
   opacity: 0.22;
-  background: url("assets/textures/map-lines.svg") center / 1100px auto repeat;
+  background: url("../../assets/textures/map-lines.svg") center / 1100px auto repeat;
   pointer-events: none;
 }
 
@@ -615,7 +615,7 @@ section {
   border: 1px solid rgba(247, 238, 220, 0.18);
   background:
     linear-gradient(rgba(247, 238, 220, 0.09), rgba(247, 238, 220, 0.04)),
-    url("assets/textures/map-lines.svg") center / 720px auto no-repeat;
+    url("../../assets/textures/map-lines.svg") center / 720px auto no-repeat;
   box-shadow: 0 26px 80px rgba(0, 0, 0, 0.18);
 }
 
@@ -660,7 +660,7 @@ section {
   align-content: end;
   background:
     linear-gradient(rgba(36, 24, 17, 0.1), rgba(36, 24, 17, 0.45)),
-    url("assets/tenochtitlan-hero.png") center / cover;
+    url("../../assets/tenochtitlan-hero.png") center / cover;
 }
 
 .large-artifact h3,
@@ -700,7 +700,7 @@ section {
 .dramatic-section {
   background:
     linear-gradient(120deg, rgba(21, 23, 25, 0.95), rgba(38, 63, 59, 0.94)),
-    url("assets/tenochtitlan-hero.png") center / cover;
+    url("../../assets/tenochtitlan-hero.png") center / cover;
   background-blend-mode: multiply;
 }
 
@@ -728,7 +728,7 @@ section {
 .legacy-section {
   background:
     linear-gradient(120deg, rgba(38, 63, 59, 0.92), rgba(96, 120, 111, 0.78)),
-    url("assets/paper-texture.png") center / 980px 980px;
+    url("../../assets/paper-texture.png") center / 980px 980px;
 }
 
 .conclusion-section {

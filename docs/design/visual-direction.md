@@ -21,7 +21,7 @@ La experiencia debe dar la sensación de estar recorriendo un documento antiguo 
 
 El proyecto ya tiene varias bases útiles:
 
-- Estructura estática simple: `index.html`, `styles.css`, `script.js`.
+- Estructura estatica simple: `index.html`, `src/styles/main.css`, `src/scripts/main.js`.
 - Navegación fija.
 - Barra de progreso de lectura.
 - Secciones separadas.
@@ -987,7 +987,7 @@ Requisitos:
 
 ## 24. Estructura CSS recomendada
 
-Cuando se implemente, conviene reordenar `styles.css` por bloques:
+Cuando se implemente, conviene mantener `src/styles/main.css` ordenado por bloques:
 
 1. Fonts.
 2. Variables.
@@ -1010,7 +1010,7 @@ Esto hará más fácil cambiar contenido sin romper el diseño.
 
 ## 25. Estructura JS recomendada
 
-El `script.js` actual ya maneja:
+Los modulos actuales de `src/scripts/` ya manejan:
 
 - Progreso de scroll.
 - Menú mobile.

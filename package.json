@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx vercel dev",
+    "dev": "node tools/dev-server.mjs",
+    "vercel:dev": "npx vercel dev --listen 3000",
     "deploy": "npx vercel deploy",
     "deploy:prod": "npx vercel deploy --prod",
     "security:check": "node scripts/check-secrets.mjs"
