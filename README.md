@@ -8,7 +8,7 @@ Configura estas variables en Vercel y en `.env` local si usas `npm run dev`:
 
 ```bash
 SUPABASE_URL=
-SUPABASE_ANON_KEY=
+SUPABASE_PUBLISHABLE_KEY=
 ```
 
 No subas `.env` ni llaves privadas al repo. El archivo `.gitignore` bloquea `.env*` y solo permite `.env.example`.
