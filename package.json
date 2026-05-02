@@ -1,0 +1,15 @@
+{
+  "name": "tenochtitlan-pagina",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "deploy": "npx vercel deploy",
+    "deploy:prod": "npx vercel deploy --prod",
+    "security:check": "node scripts/check-secrets.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.105.1"
+  }
+}
